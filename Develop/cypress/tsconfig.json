@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["es5", "dom"],
+    "sourceMap": true,
+    "noEmit": true,
+    "types": ["cypress", "node"],
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+, "component/Quize.cy.jsx", "e2e/quiz.cy.js"  ]
+}

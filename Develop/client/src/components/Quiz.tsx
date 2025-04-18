@@ -59,10 +59,10 @@ const Quiz = () => {
       <div className="card p-4 text-center">
         <h2>Quiz Completed</h2>
         <div className="alert alert-success">
-          Your score: {score}/{questions.length}
+          Your Score: {score}/{questions.length}
         </div>
         <button className="btn btn-primary d-inline-block mx-auto" onClick={handleStartQuiz}>
-          Take New Quiz
+          Start New Quiz
         </button>
       </div>
     );
@@ -82,11 +82,11 @@ const Quiz = () => {
 
   return (
     <div className='card p-4'>
-      <h2>{currentQuestion.question}</h2>
+      <h2 className="question-text">{currentQuestion.question}</h2>
       <div className="mt-3">
       {currentQuestion.answers.map((answer, index) => (
         <div key={index} className="d-flex align-items-center mb-2">
-          <button className="btn btn-primary" onClick={() => handleAnswerClick(answer.isCorrect)}>{index + 1}</button>
+          <button className="btn btn-primary answer-btn" onClick={() => handleAnswerClick(answer.isCorrect)}>{index + 1}</button>
           <div className="alert alert-secondary mb-0 ms-2 flex-grow-1">{answer.text}</div>
         </div>
       ))}
