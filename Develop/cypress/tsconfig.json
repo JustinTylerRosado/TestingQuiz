@@ -11,5 +11,5 @@
   "include": [
     "**/*.ts",
     "**/*.tsx"
-, "component/Quize.cy.jsx", "e2e/quiz.cy.js"  ]
+, "component/Quiz.cy.jsx", "e2e/quiz.cy.js"  ]
 }
